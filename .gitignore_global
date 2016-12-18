@@ -1,0 +1,21 @@
+# From http://devoh.com/blog/2013/01/global-gitignore
+
+# Mac OS X hidden files
+.DS_Store
+.DS_Store?
+
+# Vim swap files
+.*.sw?
+
+# Pow and Powder config
+/.pow*
+
+# RVM and rbenv
+/.rvmrc
+/.rbenv-version
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore VCR cassettes
+**/vcr_cassettes/
