@@ -1,10 +1,6 @@
 ### Load the default .profile #############################
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
 
-### Load Ruby VM ##########################################
-# From turing prework: https://github.com/turingschool/prework/blob/master/prework-month.md
-# Load RVM into a shell session *as a function*
-
 ### Additional Tab Completion #############################
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
@@ -132,4 +128,7 @@ PROMPT_COLOR='1;31m'
 export PS1="\[\033[$PROMPT_COLOR\]☘ [\t] <\W> \`parse_git_branch\`\n☘ $ \[\033[m\]"
 export PATH="/usr/local/sbin:$PATH"
 
+### Load Ruby VM ##########################################
+# From turing prework: https://github.com/turingschool/prework/blob/master/prework-month.md
+# Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
