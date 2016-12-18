@@ -1,11 +1,6 @@
 ### Load the default .profile #############################
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
 
-### Load Ruby VM ##########################################
-# From turing prework: https://github.com/turingschool/prework/blob/master/prework-month.md
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 ### Additional Tab Completion #############################
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
@@ -26,27 +21,36 @@ alias aliases="atom ~/.bash_profile"
 alias l="ls -lAFGgohq"
 
 # Navigation  aliases
-alias cdt="cd ~/gdrive/turing/3module"
-alias cdp="cd ~/gdrive/turing/3module/projects/"
-alias cd0="cd ~/gdrive/turing/3module/0week/"
-alias cd1="cd ~/gdrive/turing/3module/1week/"
-alias cd2="cd ~/gdrive/turing/3module/2week/"
-alias cd3="cd ~/gdrive/turing/3module/3week/"
-alias cd4="cd ~/gdrive/turing/3module/4week/"
-alias cd5="cd ~/gdrive/turing/3module/5week/"
-alias cd6="cd ~/gdrive/turing/3module/6week/"
+alias cdt="cd ~/gdrive/turing"
+alias cdm1="cd ~/gdrive/turing/1module"
+alias cdm2="cd ~/gdrive/turing/2module"
+alias cdm3="cd ~/gdrive/turing/3module"
+alias cdm4="cd ~/gdrive/turing/4module"
+alias cdp="cd ~/gdrive/turing/4module/projects/"
+alias cd0="cd ~/gdrive/turing/4module/0week/"
+alias cd1="cd ~/gdrive/turing/4module/1week/"
+alias cd2="cd ~/gdrive/turing/4module/2week/"
+alias cd3="cd ~/gdrive/turing/4module/3week/"
+alias cd4="cd ~/gdrive/turing/4module/4week/"
+alias cd5="cd ~/gdrive/turing/4module/5week/"
+alias cd6="cd ~/gdrive/turing/4module/6week/"
+
+# Ruby / Rails aliasis
+alias be="bundle exec"
+alias br="bin/rails"
+alias groutes="rake routes | grep"
 
 # Git aliases
+alias ga="git add"
+alias gc="git commit -m "
 alias gs="git status"
-alias gd="git diff --patience --ignore-space-change"
 alias gcb="git checkout -b"
-alias gc="git checkout"
-alias gcom="git checkout master"
+alias gch="git checkout"
 alias gb="git branch"
 alias gba="git branch -a"
 alias gbd="git branch -D "
-alias ga="git add"
-alias gcm="git commit -m "
+alias gd="git diff --patience --ignore-space-change"
+alias gcom="git checkout master"
 alias gac="git add . && git commit -m"
 alias gh="git hist"
 alias gp="git push"
@@ -58,7 +62,6 @@ alias pull="git pull"
 alias showdotfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hidedotfiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-
 ### Shortcut Functions #####################################
 function cs {
   cd "$1" && l
@@ -67,9 +70,9 @@ function mkdircd {
   mkdir "$1" && cd "$1"
 }
 function opennew {
+	mkdir -p $(dirname $@)
 	touch "$@" && open "$@"
 }
-
 
 ### Customized Prompt ######################################
 # From http://ezprompt.net/
@@ -122,4 +125,10 @@ function parse_git_dirty {
 
 ### My Customized Prompt ###################################
 PROMPT_COLOR='1;31m'
-export PS1="\[\033[$PROMPT_COLOR\][\A]☘ <\W> \`parse_git_branch\`\\$ \[\033[m\]"
+export PS1="\[\033[$PROMPT_COLOR\]☘ [\t] <\W> \`parse_git_branch\`\n☘ $ \[\033[m\]"
+export PATH="/usr/local/sbin:$PATH"
+
+### Load Ruby VM ##########################################
+# From turing prework: https://github.com/turingschool/prework/blob/master/prework-month.md
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

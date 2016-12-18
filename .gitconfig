@@ -1,0 +1,20 @@
+[user]
+	name = Calaway
+	email = calaway@users.noreply.github.com
+[color]
+	ui = true
+[core]
+	autocrlf = input
+	safecrlf = true
+	excludesfile = /Users/calaway/.gitignore_global
+
+# Added from http://gitimmersion.com/lab_11.html
+	[alias]
+	  ch = checkout
+	  c = commit -m
+	  s = status
+	  b = branch
+		bd = branch -d
+	  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	  type = cat-file -t
+	  dump = cat-file -p

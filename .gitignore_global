@@ -14,8 +14,8 @@
 /.rvmrc
 /.rbenv-version
 
-# Bundler binstubs
-/bin/
-
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore VCR cassettes
+**/vcr_cassettes/
