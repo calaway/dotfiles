@@ -11,6 +11,7 @@
 # Added from http://gitimmersion.com/lab_11.html
 	[alias]
 	  ch = checkout
+		a = add
 	  c = commit -m
 	  s = status
 	  b = branch

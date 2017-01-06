@@ -38,7 +38,7 @@ alias cd6="cd ~/gdrive/turing/4module/6week/"
 # Ruby / Rails aliasis
 alias be="bundle exec"
 alias br="bin/rails"
-alias groutes="rake routes | grep"
+alias groutes="bundle exec rake routes | grep"
 
 # Git aliases
 alias ga="git add"
