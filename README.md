@@ -1,15 +1,16 @@
 # Calaway's dot files
 
-1) Backup original files
+Backup any original files first.
 
 *Example:*  
 ```bash
 mv -v ~/.bash_profile ~/.bash_profile_original
 ```
 
-2) Make symlinks to the dotfiles
+Then make symlinks to the dotfiles.
 
 *Example:*  
 ```bash
 ln -sv ~/.dotfiles/.bash_profile ~
+ln -sv ~/.dotfiles/.gitconfig ~
 ```
