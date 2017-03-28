@@ -1,5 +1,5 @@
 ### Load the default .profile #############################
-[[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
+# [[ -s "$HOME/.profile" ]] && source "$HOME/.profile"
 
 ### Additional Tab Completion #############################
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -7,7 +7,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 ### Aliases ###############################################
-alias aliases="atom ~/.bash_profile"
+alias bash_profile="atom ~/.bash_profile"
 
 # fancy ls command
 # -l  long format
@@ -21,16 +21,16 @@ alias aliases="atom ~/.bash_profile"
 alias l="ls -lAFGgohq"
 
 # Navigation  aliases
-alias cdt="cd ~/gdrive/turing"
-alias cdm1="cd ~/gdrive/turing/1module"
-alias cdm2="cd ~/gdrive/turing/2module"
-alias cdm3="cd ~/gdrive/turing/3module"
-alias cdm4="cd ~/gdrive/turing/4module"
-alias cdm5="cd ~/gdrive/turing/5module"
+# alias cdt="cd ~/gdrive/turing"
+# alias cdm1="cd ~/gdrive/turing/1module"
+# alias cdm2="cd ~/gdrive/turing/2module"
+# alias cdm3="cd ~/gdrive/turing/3module"
+# alias cdm4="cd ~/gdrive/turing/4module"
+# alias cdm5="cd ~/gdrive/turing/5module"
 
 # Ruby / Rails aliasis
 alias be="bundle exec"
-alias r="bin/rails"
+# alias r="bin/rails"
 alias groutes="bundle exec rake routes | grep"
 
 # Git aliases
@@ -124,6 +124,9 @@ export PATH="/usr/local/sbin:$PATH"
 ### Load Ruby VM ##########################################
 # From turing prework: https://github.com/turingschool/prework/blob/master/prework-month.md
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-ssh-add -K ~/.ssh/id_rsa
+# ssh-add -K ~/.ssh/id_rsa
+
+### Initialize rbenv
+eval "$(rbenv init -)"

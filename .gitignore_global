@@ -18,4 +18,4 @@
 .byebug_history
 
 # Ignore VCR cassettes
-**/vcr_cassettes/
+# **/vcr_cassettes/
