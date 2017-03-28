@@ -26,18 +26,11 @@ alias cdm1="cd ~/gdrive/turing/1module"
 alias cdm2="cd ~/gdrive/turing/2module"
 alias cdm3="cd ~/gdrive/turing/3module"
 alias cdm4="cd ~/gdrive/turing/4module"
-alias cdp="cd ~/gdrive/turing/4module/projects/"
-alias cd0="cd ~/gdrive/turing/4module/0week/"
-alias cd1="cd ~/gdrive/turing/4module/1week/"
-alias cd2="cd ~/gdrive/turing/4module/2week/"
-alias cd3="cd ~/gdrive/turing/4module/3week/"
-alias cd4="cd ~/gdrive/turing/4module/4week/"
-alias cd5="cd ~/gdrive/turing/4module/5week/"
-alias cd6="cd ~/gdrive/turing/4module/6week/"
+alias cdm5="cd ~/gdrive/turing/5module"
 
 # Ruby / Rails aliasis
 alias be="bundle exec"
-alias br="bin/rails"
+alias r="bin/rails"
 alias groutes="bundle exec rake routes | grep"
 
 # Git aliases
@@ -132,3 +125,5 @@ export PATH="/usr/local/sbin:$PATH"
 # From turing prework: https://github.com/turingschool/prework/blob/master/prework-month.md
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+ssh-add -K ~/.ssh/id_rsa
