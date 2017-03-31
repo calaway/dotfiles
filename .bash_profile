@@ -7,7 +7,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 ### Aliases ###############################################
-alias bash_profile="atom ~/.bash_profile"
+alias bp="atom ~/.bash_profile"
 
 # fancy ls command
 # -l  long format
@@ -64,7 +64,7 @@ function mkdircd {
 }
 function opennew {
 	mkdir -p $(dirname $@)
-	touch "$@" && open "$@"
+	touch "$@" && atom "$@"
 }
 
 ### Customized Prompt ######################################

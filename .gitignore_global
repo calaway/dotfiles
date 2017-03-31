@@ -19,3 +19,6 @@
 
 # Ignore VCR cassettes
 # **/vcr_cassettes/
+
+# Files created by ctags for indexing purposes
+.tags*

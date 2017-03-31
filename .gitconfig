@@ -6,7 +6,7 @@
 [core]
 	autocrlf = input
 	safecrlf = true
-	excludesfile = /Users/calaway/.gitignore_global
+	excludesfile = ~/.gitignore_global
 
 # Added from http://gitimmersion.com/lab_11.html
 	[alias]
