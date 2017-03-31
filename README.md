@@ -13,4 +13,5 @@ Then make symlinks to the dotfiles.
 ```bash
 ln -sv ~/.dotfiles/.bash_profile ~
 ln -sv ~/.dotfiles/.gitconfig ~
+ln -sv ~/.dotfiles/.gitignore_global ~
 ```
