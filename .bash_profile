@@ -55,6 +55,9 @@ alias pull="git pull"
 alias showdotfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hidedotfiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
+# Return you $PATH
+alias path="echo \$PATH | tr ':' '\n'"
+
 ### Shortcut Functions #####################################
 function cs {
   cd "$1" && l
@@ -130,3 +133,5 @@ export PATH="/usr/local/sbin:$PATH"
 
 ### Initialize rbenv
 eval "$(rbenv init -)"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
