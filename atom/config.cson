@@ -1,0 +1,36 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    closeDeletedFileTabs: true
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "tmp/cache"
+      ".tags"
+      "coverage/"
+      "log/"
+      "node_modules/"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    preferredLineLength: 100
+    scrollSensitivity: 60
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "7eae4c54-8c0b-442c-ac79-fe1b1ab39cfa"
+  "file-icons": {}
+  "fuzzy-finder": {}
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
+  "linter-ui-default": {}
+  welcome:
+    showOnStartup: false
