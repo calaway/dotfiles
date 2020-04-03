@@ -1,0 +1,37 @@
+# iTerm 2 Settings
+
+## Add Native MacOS Keybindings
+
+These keybinding settings come from [this wonderful StackOverflow answer](http://stackoverflow.com/questions/6205157/iterm2-how-to-get-jump-to-beginning-end-of-line-in-bash-shell/29403520#29403520). This will set the following keybindings:
+
+Keys | Action
+:---: | ---
+⌘+← | Delete to the beginning of the line
+⌘+fn+←Delete or ⌘+Delete→ | Delete to the end of the line
+⌥+←Delete | Delete to the beginning of the word
+⌥+fn←Delete or ⌥+Delete→ | Delete to the end of the word
+⌘+← | Move cursor to the beginning of line
+⌘+→ | Move cursor to the end of line
+⌥+← | Move cursor one word left
+⌥+→ | Move cursor one word right
+⌘+z | Undo
+⇧+⌘+Z or ⌘+y | Redo
+
+### Step 1
+
+Download [iTerm2_native_macos_keybindings.itermkeymap](iTerm2_native_macos_keybindings.itermkeymap) and import it under:
+- iTerm2 >> Preferences >> Keys tab >> Presets... >> Import...
+
+or
+
+- iTerm2 >> Preferences >> Profiles >> Profile Name >> Keys tab >> Presets... >> Import...
+
+### Step 2 (for zsh only)
+
+Add the following to your `~/.zshrc`:
+```bash
+### iTerm2 Native MacOS Keybindings
+bindkey "^U" backward-kill-line
+bindkey "^X\x7f" backward-kill-line
+bindkey "^X^_" redo
+```
