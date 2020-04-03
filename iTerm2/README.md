@@ -19,12 +19,12 @@ Keys | Action
 
 ### Step 1
 
-Download [iTerm2_native_macos_keybindings.itermkeymap](iTerm2_native_macos_keybindings.itermkeymap) and import it under:
-- iTerm2 >> Preferences >> Keys tab >> Presets... >> Import...
+Download the file [iTerm2_native_macos_keybindings.itermkeymap](iTerm2_native_macos_keybindings.itermkeymap) by right clicking [this link](https://github.com/calaway/dotfiles/raw/master/iTerm2/iTerm2_native_macos_keybindings.itermkeymap) and selecting `Save link as...`. Then import it into iTerm2 under:
+- `Preferences >> Keys tab >> Presets... >> Import...`
 
 or
 
-- iTerm2 >> Preferences >> Profiles >> Profile Name >> Keys tab >> Presets... >> Import...
+- `Preferences >> Profiles >> Profile Name >> Keys tab >> Presets... >> Import...`
 
 ### Step 2 (for zsh only)
 
