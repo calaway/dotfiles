@@ -19,7 +19,7 @@ Keys | Action
 
 ### Step 1
 
-Download the file [iTerm2_native_macos_keybindings.itermkeymap](iTerm2_native_macos_keybindings.itermkeymap) by right clicking [this link](https://github.com/calaway/dotfiles/raw/master/iTerm2/iTerm2_native_macos_keybindings.itermkeymap) and selecting `Save link as...`. Then import it into iTerm2 under:
+Download the file [iTerm2_native_macos_keybindings.itermkeymap](iTerm2_native_macos_keybindings.itermkeymap) from this repo by right clicking [this link](https://github.com/calaway/dotfiles/raw/master/iTerm2/iTerm2_native_macos_keybindings.itermkeymap) and selecting `Save link as...`. Then import it into iTerm2 under:
 - `Preferences >> Keys tab >> Presets... >> Import...`
 
 or
