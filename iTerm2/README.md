@@ -6,25 +6,21 @@ These keybinding settings come from [this wonderful StackOverflow answer](http:/
 
 Keys | Action
 :---: | ---
-⌘+← | Delete to the beginning of the line
-⌘+fn+←Delete or ⌘+Delete→ | Delete to the end of the line
-⌥+←Delete | Delete to the beginning of the word
-⌥+fn←Delete or ⌥+Delete→ | Delete to the end of the word
-⌘+← | Move cursor to the beginning of line
-⌘+→ | Move cursor to the end of line
-⌥+← | Move cursor one word left
-⌥+→ | Move cursor one word right
-⌘+z | Undo
-⇧+⌘+Z or ⌘+y | Redo
+`⌘`+`←` | Move cursor to the beginning of line
+`⌘`+`→` | Move cursor to the end of line
+`⌥`+`←` | Move cursor one word left
+`⌥`+`→` | Move cursor one word right
+`⌘`+`←Delete` | Delete to the beginning of the line
+`⌘`+`fn`+`←Delete` or `⌘`+`Delete→` | Delete to the end of the line
+`⌥`+`←Delete` | Delete to the beginning of the word
+`⌥`+`fn`+`←Delete` or `⌥`+`Delete→` | Delete to the end of the word
+`⌘`+`Z` | Undo
+`⇧`+`⌘`+`Z` or `⌘`+`Y` | Redo
 
 ### Step 1
 
-Download the file [iTerm2_native_macos_keybindings.itermkeymap](iTerm2_native_macos_keybindings.itermkeymap) from this repo by right clicking [this link](https://github.com/calaway/dotfiles/raw/master/iTerm2/iTerm2_native_macos_keybindings.itermkeymap) and selecting `Save link as...`. Then import it into iTerm2 under:
-- `Preferences >> Keys tab >> Presets... >> Import...`
-
-or
-
-- `Preferences >> Profiles >> Profile Name >> Keys tab >> Presets... >> Import...`
+Download the file [iTerm2_native_macos_keybindings.itermkeymap](iTerm2_native_macos_keybindings.itermkeymap) from this repo by right clicking [here](https://github.com/calaway/dotfiles/raw/master/iTerm2/iTerm2_native_macos_keybindings.itermkeymap) and selecting `Save link as...`. Then import it into iTerm2 under:
+- `Preferences` >> `Profiles` >> select `Profile Name` >> `Keys` tab >> `Key Mappings` sub-tab >> `Presets...` >> `Import...` >> `Keep`
 
 ### Step 2 (for zsh only)
 
