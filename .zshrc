@@ -13,6 +13,6 @@ alias prettyjson="pbpaste | jq '.' | pbcopy && echo ✅"
 ### tldr
 # brew install tldr
 function tldr() {
-  /usr/local/bin/tldr "$1"
+  /usr/local/bin/tldr "$@"
   (/usr/local/bin/tldr --update &)
 }
