@@ -11,7 +11,7 @@ alias gcam="git add . && git commit -m "
 alias prettyjson="pbpaste | jq '.' | pbcopy && echo ✅"
 
 ### tldr
-# brew install tldr
+# Installation instructions: https://tldr.sh/
 function tldr() {
   /usr/local/bin/tldr "$@"
   (/usr/local/bin/tldr --update &)
