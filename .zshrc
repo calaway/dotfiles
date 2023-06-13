@@ -13,6 +13,6 @@ alias prettyjson="pbpaste | jq '.' | pbcopy && echo ✅"
 ### tldr
 # Installation instructions: https://tldr.sh/
 function tldr() {
-  /usr/local/bin/tldr "$@"
-  (/usr/local/bin/tldr --update &)
+  command tldr "$@"
+  (command tldr --update &>/dev/null &)
 }
